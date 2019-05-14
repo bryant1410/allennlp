@@ -225,14 +225,8 @@ def train_model(params: Params,
                 params=pieces.params,
                 validation_iterator=pieces.validation_iterator)
     else:
-        # Workaround to obtain the evaluation parts.
-        pieces = TrainerPieces.from_params(params.duplicate(),  # pylint: disable=no-member
-                                           serialization_dir,
-                                           recover,
-                                           cache_directory,
-                                           cache_prefix)
-
-        trainer = TrainerBase.from_params(params, serialization_dir, recover)
+        # Workaround to get the pieces and not to load the datasets twice.
+        trainer, pieces = TrainerBase.from_params(params, serialization_dir, recover)
 
     evaluation_iterator = pieces.validation_iterator or pieces.iterator
     evaluation_dataset = pieces.test_dataset
