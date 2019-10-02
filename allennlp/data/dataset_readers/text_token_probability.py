@@ -26,14 +26,16 @@ class TextTokenProbabilityDatasetReader(DatasetReader):
     The given text can't contain the [MASK] token.
     """
 
-    def __init__(self,
-                 tokenizer: Tokenizer = None,
-                 token_indexers: Dict[str, TokenIndexer] = None,
-                 mask_special_tokens: bool = False,
-                 lazy: bool = False) -> None:
+    def __init__(
+        self,
+        tokenizer: Tokenizer = None,
+        token_indexers: Dict[str, TokenIndexer] = None,
+        mask_special_tokens: bool = False,
+        lazy: bool = False,
+    ) -> None:
         super().__init__(lazy)
         self._tokenizer = tokenizer or WordTokenizer(word_splitter=JustSpacesWordSplitter())
-        self._token_indexers = token_indexers or {'tokens': SingleIdTokenIndexer()}
+        self._token_indexers = token_indexers or {"tokens": SingleIdTokenIndexer()}
         self._mask_special_tokens = mask_special_tokens
 
     @overrides
@@ -46,17 +48,21 @@ class TextTokenProbabilityDatasetReader(DatasetReader):
     def text_to_instance(self, sentence: str) -> Instance:
         tokens = self._tokenizer.tokenize(sentence)
 
-        assert all(token.text != '[MASK]' for token in tokens)
+        assert all(token.text != "[MASK]" for token in tokens)
 
         text_fields = []
         mask_position_fields = []
 
         for i in range(len(tokens)):
-            if not self._mask_special_tokens and tokens[i].text.startswith('[') and tokens[i].text.endswith(']'):
+            if (
+                not self._mask_special_tokens
+                and tokens[i].text.startswith("[")
+                and tokens[i].text.endswith("]")
+            ):
                 continue
 
             tokens_copy = copy.deepcopy(tokens)
-            tokens_copy[i] = Token('[MASK]')
+            tokens_copy[i] = Token("[MASK]")
 
             text_field = TextField(tokens_copy, self._token_indexers)
             text_fields.append(text_field)
@@ -65,8 +71,10 @@ class TextTokenProbabilityDatasetReader(DatasetReader):
 
         # TODO: I think there's a problem if the masked tokens get split into multiple word pieces...
 
-        return Instance({
-            'masked_sentences_tokens': ListField(text_fields),
-            'mask_positions': ListField(mask_position_fields),
-            'unmasked_sentence_tokens': TextField(tokens, self._token_indexers)
-        })
+        return Instance(
+            {
+                "masked_sentences_tokens": ListField(text_fields),
+                "mask_positions": ListField(mask_position_fields),
+                "unmasked_sentence_tokens": TextField(tokens, self._token_indexers),
+            }
+        )
