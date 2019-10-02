@@ -9,11 +9,12 @@ local pretrained_model = 'bert-base-cased';
     token_indexers: {
       bert: {
         type: 'bert-pretrained',
-        pretrained_model: pretrained_model
+        pretrained_model: pretrained_model,
+        do_lowercase: false
       }
     }
   },
-  train_data_path: '/home/santiago/Desktop/het.txt',
+  train_data_path: 'het.txt',
   model: {
     type: 'text_token_probability',
     text_field_embedder: {
@@ -30,7 +31,15 @@ local pretrained_model = 'bert-base-cased';
         }
       }
     },
-    language_model_head: 'bert'
+    language_model_head: {
+      type: 'bert',
+      model_name: pretrained_model
+    }
+  },
+  iterator: {
+    type: 'bucket',
+    sorting_keys: [['masked_sentences_tokens', 'num_tokens']],
+    batch_size: 32,
   },
   trainer: {
     type: 'no_op'
