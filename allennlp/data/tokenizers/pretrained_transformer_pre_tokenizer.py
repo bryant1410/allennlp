@@ -1,14 +1,14 @@
 from typing import List, Optional
-from overrides import overrides
 
-import spacy
 import ftfy
+import spacy
+from overrides import overrides
 from pytorch_pretrained_bert.tokenization import BasicTokenizer as BertTokenizer
 
 from allennlp.common.util import get_spacy_model
+from allennlp.data.token_indexers.openai_transformer_byte_pair_indexer import text_standardize
 from allennlp.data.tokenizers.token import Token
 from allennlp.data.tokenizers.tokenizer import Tokenizer
-from allennlp.data.token_indexers.openai_transformer_byte_pair_indexer import text_standardize
 
 
 @Tokenizer.register("openai")

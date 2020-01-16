@@ -1,5 +1,4 @@
 import codecs
-import copy
 import gzip
 import pickle
 import shutil

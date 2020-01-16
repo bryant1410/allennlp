@@ -5,9 +5,9 @@ from overrides import overrides
 from allennlp.common.util import JsonDict, sanitize
 from allennlp.data import DatasetReader, Instance
 from allennlp.data.tokenizers import SpacyTokenizer
+from allennlp.data.tokenizers import Token
 from allennlp.models import Model
 from allennlp.predictors.predictor import Predictor
-from allennlp.data.tokenizers import Token
 
 
 def join_mwp(tags: List[str]) -> List[str]:

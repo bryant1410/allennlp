@@ -1,7 +1,7 @@
 from typing import Dict
 
-from pytorch_pretrained_bert.modeling import BertConfig, BertModel
 from _pytest.monkeypatch import MonkeyPatch
+from pytorch_pretrained_bert.modeling import BertConfig, BertModel
 
 from allennlp.common.testing import ModelTestCase
 from allennlp.data.dataset_readers import DatasetReader

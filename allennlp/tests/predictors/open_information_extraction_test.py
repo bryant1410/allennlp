@@ -1,4 +1,5 @@
 from allennlp.common.testing import AllenNlpTestCase
+from allennlp.data.tokenizers.spacy_tokenizer import SpacyTokenizer
 from allennlp.models.archival import load_archive
 from allennlp.predictors import Predictor
 from allennlp.predictors.open_information_extraction import (
@@ -6,7 +7,6 @@ from allennlp.predictors.open_information_extraction import (
     get_predicate_text,
 )
 from allennlp.predictors.open_information_extraction import sanitize_label
-from allennlp.data.tokenizers.spacy_tokenizer import SpacyTokenizer
 
 
 class TestOpenIePredictor(AllenNlpTestCase):

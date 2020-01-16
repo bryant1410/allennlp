@@ -1,5 +1,4 @@
 import gc
-
 import time
 
 from allennlp.common.testing import AllenNlpTestCase

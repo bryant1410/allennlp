@@ -4,12 +4,12 @@ import pytest
 import torch
 
 from allennlp.common import Params
+from allennlp.common.checks import ConfigurationError
 from allennlp.common.from_params import FromParams, takes_arg, remove_optional, create_kwargs
 from allennlp.common.testing import AllenNlpTestCase
 from allennlp.data.tokenizers import Tokenizer
 from allennlp.models import Model
 from allennlp.models.archival import load_archive
-from allennlp.common.checks import ConfigurationError
 
 
 class MyClass(FromParams):

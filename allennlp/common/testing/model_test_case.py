@@ -1,8 +1,8 @@
 import copy
 from typing import Any, Dict, Set, Union, Iterable
 
-from numpy.testing import assert_allclose
 import torch
+from numpy.testing import assert_allclose
 
 from allennlp.commands.train import train_model_from_file
 from allennlp.common import Params

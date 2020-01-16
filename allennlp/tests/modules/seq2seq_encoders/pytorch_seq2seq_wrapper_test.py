@@ -1,7 +1,7 @@
 import numpy
-from numpy.testing import assert_almost_equal
 import pytest
 import torch
+from numpy.testing import assert_almost_equal
 from torch.nn import LSTM, GRU
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 

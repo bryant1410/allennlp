@@ -1,17 +1,17 @@
-from typing import Dict, Optional, Any, List
 import logging
-
 from collections import defaultdict
-from overrides import overrides
-import torch
+from typing import Dict, Optional, Any, List
+
 import numpy
+import torch
+from overrides import overrides
 
 from allennlp.common.checks import ConfigurationError
 from allennlp.data import Vocabulary
-from allennlp.modules import Seq2SeqEncoder, TextFieldEmbedder, Embedding
-from allennlp.modules import FeedForward
-from allennlp.models.model import Model
 from allennlp.models.biaffine_dependency_parser import BiaffineDependencyParser
+from allennlp.models.model import Model
+from allennlp.modules import FeedForward
+from allennlp.modules import Seq2SeqEncoder, TextFieldEmbedder, Embedding
 from allennlp.nn import InitializerApplicator, RegularizerApplicator
 from allennlp.nn.util import get_text_field_mask
 from allennlp.training.metrics import AttachmentScores

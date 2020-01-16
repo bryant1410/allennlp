@@ -1,10 +1,10 @@
-import logging
-from typing import Dict, Union, Iterable, Iterator, List, Optional, Tuple, Deque
-from collections import defaultdict
 import itertools
-import math
+import logging
 import random
+from collections import defaultdict
+from typing import Dict, Union, Iterable, Iterator, List, Optional, Tuple, Deque
 
+import math
 import torch
 
 from allennlp.common.registrable import Registrable

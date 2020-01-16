@@ -1,7 +1,7 @@
 from typing import Dict, Any
 
-from overrides import overrides
 import torch
+from overrides import overrides
 
 from allennlp.common.checks import ConfigurationError
 from allennlp.common.params import Params

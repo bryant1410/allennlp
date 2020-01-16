@@ -1,7 +1,7 @@
-import torch
-
-from pytorch_pretrained_bert.modeling import BertConfig, BertModel
 from typing import List, Dict
+
+import torch
+from pytorch_pretrained_bert.modeling import BertConfig, BertModel
 
 from allennlp.common.testing import ModelTestCase
 from allennlp.data import Token, TokenIndexer

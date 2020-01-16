@@ -1,7 +1,7 @@
 from typing import Dict
 
-from overrides import overrides
 import torch
+from overrides import overrides
 
 from allennlp.common.checks import check_dimensions_match
 from allennlp.data.vocabulary import Vocabulary

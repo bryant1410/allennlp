@@ -1,7 +1,9 @@
-from typing import Dict, List, Union
-import logging
 import json
+import logging
+from typing import Dict, List, Union
+
 from overrides import overrides
+
 from allennlp.common.file_utils import cached_path
 from allennlp.data.dataset_readers.dataset_reader import DatasetReader
 from allennlp.data.fields import LabelField, TextField, Field, ListField

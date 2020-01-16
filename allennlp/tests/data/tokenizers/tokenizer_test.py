@@ -1,8 +1,8 @@
-from allennlp.common.testing import AllenNlpTestCase
 from allennlp.common import Params
 from allennlp.common.checks import ConfigurationError
-from allennlp.data.tokenizers.tokenizer import Tokenizer
+from allennlp.common.testing import AllenNlpTestCase
 from allennlp.data.tokenizers.spacy_tokenizer import SpacyTokenizer
+from allennlp.data.tokenizers.tokenizer import Tokenizer
 from allennlp.data.tokenizers.whitespace_tokenizer import WhitespaceTokenizer
 
 

@@ -1,9 +1,9 @@
 from collections import Counter
-import math
 from typing import Iterable, Tuple, Dict, Set
 
-from overrides import overrides
+import math
 import torch
+from overrides import overrides
 
 from allennlp.training.metrics.metric import Metric
 

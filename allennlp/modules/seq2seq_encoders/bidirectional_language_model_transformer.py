@@ -8,10 +8,10 @@ transformer implementations and may end up deleting this one.
 If you use it, consider yourself warned.
 """
 
-from typing import Tuple, Callable
-import math
 import warnings
+from typing import Tuple, Callable
 
+import math
 import torch
 import torch.nn.functional as F
 

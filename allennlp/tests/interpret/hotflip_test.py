@@ -1,10 +1,7 @@
 from allennlp.common.testing import AllenNlpTestCase
+from allennlp.interpret.attackers import Hotflip
 from allennlp.models.archival import load_archive
 from allennlp.predictors import Predictor
-from allennlp.interpret.attackers import Hotflip
-from allennlp.interpret.attackers.hotflip import DEFAULT_IGNORE_TOKENS
-
-from ..modules.language_model_heads.linear import LinearLanguageModelHead
 
 
 class TestHotflip(AllenNlpTestCase):

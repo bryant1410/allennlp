@@ -1,5 +1,5 @@
-import pytest
 import numpy
+import pytest
 import torch
 import torch.nn.init
 from torch.nn.modules.rnn import LSTM

@@ -1,12 +1,9 @@
-from typing import Dict, List, Optional, Set, Callable
 from collections import defaultdict
+from typing import Dict, List, Optional, Set, Callable
 
 import torch
 
 from allennlp.common.checks import ConfigurationError
-from allennlp.nn.util import get_lengths_from_binary_sequence_mask
-from allennlp.data.vocabulary import Vocabulary
-from allennlp.training.metrics.metric import Metric
 from allennlp.data.dataset_readers.dataset_utils.span_utils import (
     bio_tags_to_spans,
     bioul_tags_to_spans,
@@ -14,7 +11,9 @@ from allennlp.data.dataset_readers.dataset_utils.span_utils import (
     bmes_tags_to_spans,
     TypedStringSpan,
 )
-
+from allennlp.data.vocabulary import Vocabulary
+from allennlp.nn.util import get_lengths_from_binary_sequence_mask
+from allennlp.training.metrics.metric import Metric
 
 TAGS_TO_SPANS_FUNCTION_TYPE = Callable[[List[str], Optional[List[str]]], List[TypedStringSpan]]
 

@@ -1,8 +1,8 @@
 """
 A stacked bidirectional LSTM with skip connections between layers.
 """
-from typing import Optional, Tuple, List
 import warnings
+from typing import Optional, Tuple, List
 
 import torch
 from torch.nn.utils.rnn import PackedSequence, pad_packed_sequence

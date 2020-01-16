@@ -1,6 +1,6 @@
 from typing import Sequence, List
-import math
 
+import math
 import torch
 
 from allennlp.common.checks import ConfigurationError

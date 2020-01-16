@@ -1,9 +1,9 @@
 from copy import deepcopy
 from typing import List, Dict
 
+import numpy
 from overrides import overrides
 from spacy.tokens import Doc
-import numpy
 
 from allennlp.common.util import JsonDict
 from allennlp.common.util import get_spacy_model

@@ -17,9 +17,9 @@
 
 
 import argparse
+import time
 from enum import Enum
 from multiprocessing import Process
-import time
 
 from allennlp.common import Params
 from allennlp.training.trainer_pieces import TrainerPieces

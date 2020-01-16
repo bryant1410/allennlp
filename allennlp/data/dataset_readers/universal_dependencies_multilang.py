@@ -1,12 +1,12 @@
-from typing import Dict, Tuple, List, Iterator, Any
-import logging
-import itertools
 import glob
+import itertools
+import logging
 import os
-import numpy as np
+from typing import Dict, Tuple, List, Iterator, Any
 
-from overrides import overrides
+import numpy as np
 from conllu import parse_incr
+from overrides import overrides
 
 from allennlp.common.checks import ConfigurationError
 from allennlp.data.dataset_readers.dataset_reader import DatasetReader

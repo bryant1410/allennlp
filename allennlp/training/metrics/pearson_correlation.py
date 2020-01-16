@@ -1,9 +1,9 @@
 from typing import Optional
+
 import math
 import numpy as np
-
-from overrides import overrides
 import torch
+from overrides import overrides
 
 from allennlp.training.metrics.covariance import Covariance
 from allennlp.training.metrics.metric import Metric

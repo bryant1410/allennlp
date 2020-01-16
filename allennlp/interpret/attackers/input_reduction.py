@@ -1,6 +1,6 @@
+import heapq
 from copy import deepcopy
 from typing import List, Tuple
-import heapq
 
 import numpy as np
 import torch

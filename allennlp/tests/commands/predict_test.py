@@ -10,11 +10,11 @@ import tempfile
 
 import pytest
 
-from allennlp.common.checks import ConfigurationError
-from allennlp.common.util import JsonDict
-from allennlp.common.testing import AllenNlpTestCase
 from allennlp.commands import main
 from allennlp.commands.predict import Predict
+from allennlp.common.checks import ConfigurationError
+from allennlp.common.testing import AllenNlpTestCase
+from allennlp.common.util import JsonDict
 from allennlp.data.dataset_readers import DatasetReader, TextClassificationJsonReader
 from allennlp.models.archival import load_archive
 from allennlp.predictors import Predictor, TextClassifierPredictor

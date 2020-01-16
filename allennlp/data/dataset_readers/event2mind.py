@@ -1,7 +1,7 @@
-from typing import Dict
 import csv
 import json
 import logging
+from typing import Dict
 
 from overrides import overrides
 
@@ -11,8 +11,8 @@ from allennlp.common.util import START_SYMBOL, END_SYMBOL
 from allennlp.data.dataset_readers.dataset_reader import DatasetReader
 from allennlp.data.fields import TextField
 from allennlp.data.instance import Instance
-from allennlp.data.tokenizers import Token, Tokenizer, SpacyTokenizer
 from allennlp.data.token_indexers import TokenIndexer, SingleIdTokenIndexer
+from allennlp.data.tokenizers import Token, Tokenizer, SpacyTokenizer
 
 logger = logging.getLogger(__name__)
 

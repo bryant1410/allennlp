@@ -1,9 +1,8 @@
 from typing import Union
 
-from overrides import overrides
-
 import torch
 import torch.nn
+from overrides import overrides
 from pytorch_pretrained_bert import BertModel
 
 from allennlp.modules.seq2vec_encoders.seq2vec_encoder import Seq2VecEncoder

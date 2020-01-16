@@ -2,12 +2,14 @@
 The ``CallbackTrainer`` should be considered experimental code.
 Its API may change at any time, and it may disappear altogether.
 """
-import logging
-import time
 import datetime
 import functools
+import logging
+import time
 from typing import Dict, Optional, List, Any, Iterable
+
 import torch
+from torch.nn.parallel import DistributedDataParallel
 
 from allennlp.common import Params
 from allennlp.common.checks import parse_cuda_device, check_for_gpu
@@ -21,10 +23,8 @@ from allennlp.training.callbacks.callback import Callback
 from allennlp.training.callbacks.callback_handler import CallbackHandler
 from allennlp.training.callbacks.events import Events
 from allennlp.training.optimizers import Optimizer
-from allennlp.training.trainer_pieces import TrainerPieces
 from allennlp.training.trainer_base import TrainerBase
-
-from torch.nn.parallel import DistributedDataParallel
+from allennlp.training.trainer_pieces import TrainerPieces
 
 logger = logging.getLogger(__name__)
 

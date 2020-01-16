@@ -10,10 +10,10 @@ import os
 from collections import defaultdict
 from typing import Any, Callable, Dict, Iterable, List, Optional, Set, Union, TYPE_CHECKING
 
-from allennlp.common.util import namespace_match
 from allennlp.common import Registrable
 from allennlp.common.checks import ConfigurationError
 from allennlp.common.tqdm import Tqdm
+from allennlp.common.util import namespace_match
 
 if TYPE_CHECKING:
     from allennlp.data import instance as adi  # noqa

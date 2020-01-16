@@ -1,21 +1,21 @@
-from typing import Dict, Optional, Tuple, Any, List
-import logging
 import copy
+import logging
+from typing import Dict, Optional, Tuple, Any, List
 
-from overrides import overrides
-import torch
-from torch.nn.modules import Dropout
 import numpy
+import torch
+from overrides import overrides
+from torch.nn.modules import Dropout
 
 from allennlp.common.checks import check_dimensions_match, ConfigurationError
 from allennlp.data import Vocabulary
+from allennlp.models.model import Model
+from allennlp.modules import FeedForward
 from allennlp.modules import Seq2SeqEncoder, TextFieldEmbedder, Embedding, InputVariationalDropout
 from allennlp.modules.matrix_attention.bilinear_matrix_attention import BilinearMatrixAttention
-from allennlp.modules import FeedForward
-from allennlp.models.model import Model
 from allennlp.nn import InitializerApplicator, RegularizerApplicator, Activation
-from allennlp.nn.util import get_text_field_mask
 from allennlp.nn.util import get_lengths_from_binary_sequence_mask
+from allennlp.nn.util import get_text_field_mask
 from allennlp.training.metrics import F1Measure
 
 logger = logging.getLogger(__name__)

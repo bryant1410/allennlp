@@ -1,7 +1,7 @@
-from collections import Counter
+import json
 import os
 import pathlib
-import json
+from collections import Counter
 
 import pytest
 import responses

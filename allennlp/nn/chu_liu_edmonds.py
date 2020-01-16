@@ -1,4 +1,5 @@
 from typing import List, Set, Tuple, Dict
+
 import numpy
 
 from allennlp.common.checks import ConfigurationError

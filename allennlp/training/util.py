@@ -1,25 +1,25 @@
 """
 Helper functions for Trainers
 """
-import torch.distributed as dist
-from typing import Any, Union, Dict, Iterable, List, Optional, Tuple
 import datetime
 import json
 import logging
-import pathlib
 import os
+import pathlib
 import shutil
+from typing import Any, Union, Dict, Iterable, List, Optional, Tuple
 
 import torch
+import torch.distributed as dist
 
 from allennlp.common.checks import ConfigurationError, check_for_gpu
 from allennlp.common.params import Params
 from allennlp.common.tqdm import Tqdm
-from allennlp.data.dataset_readers import DatasetReader
 from allennlp.data import Instance, Vocabulary
+from allennlp.data.dataset_readers import DatasetReader
 from allennlp.data.iterators import DataIterator
-from allennlp.models.model import Model
 from allennlp.models.archival import CONFIG_NAME
+from allennlp.models.model import Model
 from allennlp.nn import util as nn_util
 
 logger = logging.getLogger(__name__)

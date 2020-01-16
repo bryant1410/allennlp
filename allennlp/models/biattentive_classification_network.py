@@ -1,15 +1,15 @@
 from typing import Dict, Optional, Union
 
 import numpy
-from overrides import overrides
 import torch
-from torch import nn
 import torch.nn.functional as F
+from overrides import overrides
+from torch import nn
 
 from allennlp.common.checks import check_dimensions_match, ConfigurationError
 from allennlp.data import Vocabulary
-from allennlp.modules import Elmo, FeedForward, Maxout, Seq2SeqEncoder, TextFieldEmbedder
 from allennlp.models.model import Model
+from allennlp.modules import Elmo, FeedForward, Maxout, Seq2SeqEncoder, TextFieldEmbedder
 from allennlp.nn import InitializerApplicator, RegularizerApplicator
 from allennlp.nn import util
 from allennlp.training.metrics import CategoricalAccuracy

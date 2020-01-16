@@ -1,10 +1,10 @@
 import logging
 from typing import List
 
-from allennlp.common.util import sanitize_wordpiece
 from overrides import overrides
 from transformers.tokenization_auto import AutoTokenizer
 
+from allennlp.common.util import sanitize_wordpiece
 from allennlp.data.tokenizers.token import Token
 from allennlp.data.tokenizers.tokenizer import Tokenizer
 
@@ -116,7 +116,9 @@ class PretrainedTransformerTokenizer(Tokenizer):
 
             whole_text = sentence_1
             if sentence_2 is not None:
-                whole_text += sentence_2  # Calculating character offsets with sentence pairs is sketchy at best.
+                whole_text += (
+                    sentence_2
+                )  # Calculating character offsets with sentence pairs is sketchy at best.
             if self._tokenizer_lowercases:
                 whole_text = whole_text.lower()
 

@@ -1,6 +1,6 @@
-from typing import Dict, List, Sequence, Iterable
 import itertools
 import logging
+from typing import Dict, List, Sequence, Iterable
 
 from overrides import overrides
 

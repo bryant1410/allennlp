@@ -1,8 +1,8 @@
-from typing import Dict, List, TypeVar, Generic
 import warnings
+from typing import Dict, List, TypeVar, Generic
 
-import torch
 import numpy
+import torch
 
 from allennlp.common import Registrable
 from allennlp.data.tokenizers.token import Token

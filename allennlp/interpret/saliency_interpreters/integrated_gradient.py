@@ -1,6 +1,6 @@
-import math
 from typing import List, Dict, Any
 
+import math
 import numpy
 
 from allennlp.common.util import JsonDict, sanitize

@@ -1,6 +1,6 @@
-from typing import Dict
 import json
 import logging
+from typing import Dict
 
 from overrides import overrides
 

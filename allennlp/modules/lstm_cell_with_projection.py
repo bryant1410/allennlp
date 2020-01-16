@@ -7,8 +7,8 @@ from typing import Optional, Tuple, List
 
 import torch
 
-from allennlp.nn.util import get_dropout_mask
 from allennlp.nn.initializers import block_orthogonal
+from allennlp.nn.util import get_dropout_mask
 
 
 class LstmCellWithProjection(torch.nn.Module):

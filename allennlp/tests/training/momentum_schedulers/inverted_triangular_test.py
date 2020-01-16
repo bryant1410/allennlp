@@ -1,5 +1,5 @@
-from math import isclose
 import torch
+from math import isclose
 
 from allennlp.common.params import Params
 from allennlp.common.testing import AllenNlpTestCase

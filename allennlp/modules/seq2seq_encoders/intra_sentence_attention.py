@@ -1,5 +1,5 @@
-from overrides import overrides
 import torch
+from overrides import overrides
 from torch.nn import Linear
 
 from allennlp.common.checks import ConfigurationError

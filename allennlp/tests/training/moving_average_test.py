@@ -1,7 +1,7 @@
 from typing import Dict
 
-import torch
 import numpy as np
+import torch
 
 from allennlp.common.params import Params
 from allennlp.common.testing import AllenNlpTestCase

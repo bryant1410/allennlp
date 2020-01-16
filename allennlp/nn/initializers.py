@@ -23,19 +23,19 @@ The available initialization functions are
 * :func:`"uniform_unit_scaling" <uniform_unit_scaling>`
 * :class:`"pretrained" <PretrainedModelInitializer>`
 """
+import itertools
 import logging
 import re
-import math
 from typing import Callable, List, Tuple, Type, Dict
-import itertools
-from overrides import overrides
 
+import math
 import torch
 import torch.nn.init
+from overrides import overrides
 
 from allennlp.common import Registrable
-from allennlp.common.params import Params
 from allennlp.common.checks import ConfigurationError
+from allennlp.common.params import Params
 
 logger = logging.getLogger(__name__)
 

@@ -3,10 +3,10 @@ from typing import Dict, Optional
 import pytest
 import torch
 
-from allennlp.nn import InitializerApplicator, Initializer
 from allennlp.common.checks import ConfigurationError
-from allennlp.common.testing import AllenNlpTestCase
 from allennlp.common.params import Params
+from allennlp.common.testing import AllenNlpTestCase
+from allennlp.nn import InitializerApplicator, Initializer
 
 
 class _Net1(torch.nn.Module):

@@ -1,8 +1,8 @@
-from typing import Dict, Tuple, List
 import logging
+from typing import Dict, Tuple, List
 
-from overrides import overrides
 from conllu import parse_incr
+from overrides import overrides
 
 from allennlp.common.file_utils import cached_path
 from allennlp.data.dataset_readers.dataset_reader import DatasetReader

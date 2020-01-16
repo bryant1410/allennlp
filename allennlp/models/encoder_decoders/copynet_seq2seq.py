@@ -2,8 +2,8 @@ import logging
 from typing import Dict, Tuple, List, Any, Union
 
 import numpy
-from overrides import overrides
 import torch
+from overrides import overrides
 from torch.nn.modules.linear import Linear
 from torch.nn.modules.rnn import LSTMCell
 
@@ -13,9 +13,8 @@ from allennlp.models.model import Model
 from allennlp.modules import Attention, TextFieldEmbedder, Seq2SeqEncoder
 from allennlp.modules.token_embedders import Embedding
 from allennlp.nn import InitializerApplicator, util
-from allennlp.training.metrics import Metric, BLEU
 from allennlp.nn.beam_search import BeamSearch
-
+from allennlp.training.metrics import Metric, BLEU
 
 logger = logging.getLogger(__name__)
 

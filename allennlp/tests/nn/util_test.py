@@ -3,16 +3,16 @@ import random
 from typing import NamedTuple, Any
 
 import numpy
-from numpy.testing import assert_array_almost_equal, assert_almost_equal
-import torch
 import pytest
+import torch
 from flaky import flaky
+from numpy.testing import assert_array_almost_equal, assert_almost_equal
 
 from allennlp.common.checks import ConfigurationError
 from allennlp.common.testing import AllenNlpTestCase
 from allennlp.common.util import sanitize
-from allennlp.nn import util
 from allennlp.models import load_archive
+from allennlp.nn import util
 
 
 class TestNnUtil(AllenNlpTestCase):

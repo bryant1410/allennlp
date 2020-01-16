@@ -1,5 +1,5 @@
-from typing import Iterator
 import re
+from typing import Iterator
 
 import torch
 import torch.nn.functional as F

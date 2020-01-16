@@ -1,7 +1,6 @@
 import math
-
-from overrides import overrides
 import torch
+from overrides import overrides
 
 from allennlp.modules.similarity_functions.similarity_function import SimilarityFunction
 

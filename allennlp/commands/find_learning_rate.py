@@ -45,10 +45,11 @@ which to write the results.
 
 import argparse
 import logging
-import math
 import os
 import re
 from typing import List, Tuple
+
+import math
 
 from allennlp.commands.subcommand import Subcommand
 from allennlp.common import Params, Tqdm

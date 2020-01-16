@@ -1,10 +1,11 @@
 import math
-import torch
 import numpy as np
+import torch
 from numpy.testing import assert_allclose
 
 from allennlp.common.testing import AllenNlpTestCase
 from allennlp.training.metrics import SpearmanCorrelation
+
 
 # pylint: disable=no-self-use
 

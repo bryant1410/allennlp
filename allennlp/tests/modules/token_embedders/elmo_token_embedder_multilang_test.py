@@ -3,8 +3,8 @@ import json
 import os
 import pathlib
 import tarfile
-import numpy as np
 
+import numpy as np
 import torch
 
 from allennlp.commands.train import train_model

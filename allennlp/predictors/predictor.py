@@ -1,11 +1,11 @@
-from typing import List, Iterator, Dict, Tuple, Any, Type
 import json
 from contextlib import contextmanager
+from typing import List, Iterator, Dict, Tuple, Any, Type
 
 import numpy
-from torch.utils.hooks import RemovableHandle
 from torch import Tensor
 from torch import backends
+from torch.utils.hooks import RemovableHandle
 
 from allennlp.common import Registrable
 from allennlp.common.util import JsonDict, sanitize

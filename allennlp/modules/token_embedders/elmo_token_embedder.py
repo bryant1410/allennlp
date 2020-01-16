@@ -1,11 +1,12 @@
 from typing import List
+
 import torch
 
 from allennlp.common import Params
-from allennlp.modules.token_embedders.token_embedder import TokenEmbedder
+from allennlp.data import Vocabulary
 from allennlp.modules.elmo import Elmo
 from allennlp.modules.time_distributed import TimeDistributed
-from allennlp.data import Vocabulary
+from allennlp.modules.token_embedders.token_embedder import TokenEmbedder
 
 
 @TokenEmbedder.register("elmo_token_embedder")

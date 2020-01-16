@@ -9,6 +9,7 @@ import torch.optim.lr_scheduler
 
 from allennlp.common.checks import ConfigurationError
 from allennlp.common.registrable import Registrable
+from allennlp.common.testing import AllenNlpTestCase
 from allennlp.data.dataset_readers.dataset_reader import DatasetReader
 from allennlp.data.iterators.data_iterator import DataIterator
 from allennlp.data.token_indexers.token_indexer import TokenIndexer
@@ -18,7 +19,6 @@ from allennlp.modules.seq2vec_encoders.seq2vec_encoder import Seq2VecEncoder
 from allennlp.modules.similarity_functions import SimilarityFunction
 from allennlp.modules.text_field_embedders.text_field_embedder import TextFieldEmbedder
 from allennlp.modules.token_embedders.token_embedder import TokenEmbedder
-from allennlp.common.testing import AllenNlpTestCase
 from allennlp.nn import Initializer
 from allennlp.nn.regularizers.regularizer import Regularizer
 from allennlp.training.learning_rate_schedulers import LearningRateScheduler

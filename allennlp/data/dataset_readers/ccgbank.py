@@ -1,6 +1,6 @@
-from typing import Dict, List, Sequence
 import logging
 import re
+from typing import Dict, List, Sequence
 
 from overrides import overrides
 

@@ -1,10 +1,9 @@
 import spacy
 
 from allennlp.common.testing import AllenNlpTestCase
-
 from allennlp.models.archival import load_archive
-from allennlp.predictors import Predictor
 from allennlp.predictors import CorefPredictor
+from allennlp.predictors import Predictor
 
 
 class TestCorefPredictor(AllenNlpTestCase):

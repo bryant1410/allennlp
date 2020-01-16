@@ -6,12 +6,11 @@ from pytorch_pretrained_bert.tokenization import BertTokenizer
 
 from allennlp.common.file_utils import cached_path
 from allennlp.data.dataset_readers.dataset_reader import DatasetReader
+from allennlp.data.dataset_readers.dataset_utils import Ontonotes, OntonotesSentence
 from allennlp.data.fields import Field, TextField, SequenceLabelField, MetadataField
 from allennlp.data.instance import Instance
 from allennlp.data.token_indexers import SingleIdTokenIndexer, TokenIndexer
 from allennlp.data.tokenizers import Token
-from allennlp.data.dataset_readers.dataset_utils import Ontonotes, OntonotesSentence
-
 
 logger = logging.getLogger(__name__)
 

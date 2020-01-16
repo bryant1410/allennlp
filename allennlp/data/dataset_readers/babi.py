@@ -1,12 +1,12 @@
 import logging
-
 from typing import Dict, List
+
 from overrides import overrides
 
 from allennlp.common.file_utils import cached_path
 from allennlp.data.dataset_readers.dataset_reader import DatasetReader
-from allennlp.data.instance import Instance
 from allennlp.data.fields import Field, TextField, ListField, IndexField
+from allennlp.data.instance import Instance
 from allennlp.data.token_indexers import TokenIndexer, SingleIdTokenIndexer
 from allennlp.data.tokenizers import Token
 

@@ -1,6 +1,6 @@
+import torch
 from overrides import overrides
 from transformers.modeling_auto import AutoModel
-import torch
 
 from allennlp.modules.token_embedders.token_embedder import TokenEmbedder
 

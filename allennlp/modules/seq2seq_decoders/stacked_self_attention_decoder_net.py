@@ -1,14 +1,16 @@
-from typing import Tuple, Dict, Optional
 import copy
 from copy import deepcopy
-import math
-from overrides import overrides
+from typing import Tuple, Dict, Optional
 
+import math
 import torch
+import torch.nn.functional as F
+from overrides import overrides
 from torch import nn
 from torch.autograd import Variable
-import torch.nn.functional as F
 
+from allennlp.modules.layer_norm import LayerNorm
+from allennlp.modules.seq2seq_decoders.decoder_net import DecoderNet
 from allennlp.modules.seq2seq_encoders.bidirectional_language_model_transformer import (
     subsequent_mask,
     PositionwiseFeedForward,
@@ -16,8 +18,6 @@ from allennlp.modules.seq2seq_encoders.bidirectional_language_model_transformer 
     PositionalEncoding,
     MultiHeadedAttention,
 )
-from allennlp.modules.seq2seq_decoders.decoder_net import DecoderNet
-from allennlp.modules.layer_norm import LayerNorm
 
 
 @DecoderNet.register("stacked_self_attention")

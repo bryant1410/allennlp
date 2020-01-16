@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-import tarfile
+import logging
 import os
 import sys
-import logging
+import tarfile
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(os.path.join(__file__, os.pardir))))
 from allennlp.models.archival import CONFIG_NAME, _WEIGHTS_NAME

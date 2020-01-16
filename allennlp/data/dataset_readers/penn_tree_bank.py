@@ -1,15 +1,16 @@
-from typing import Dict, List, Tuple
 import logging
 import os
-
-from overrides import overrides
+from typing import Dict, List, Tuple
 
 # NLTK is so performance orientated (ha ha) that they have lazy imports. Why? Who knows.
 from nltk.corpus.reader.bracket_parse import BracketParseCorpusReader
 from nltk.tree import Tree
+from overrides import overrides
 
+from allennlp.common.checks import ConfigurationError
 from allennlp.common.file_utils import cached_path
 from allennlp.data.dataset_readers.dataset_reader import DatasetReader
+from allennlp.data.dataset_readers.dataset_utils.span_utils import enumerate_spans
 from allennlp.data.fields import (
     TextField,
     SpanField,
@@ -21,8 +22,6 @@ from allennlp.data.fields import (
 from allennlp.data.instance import Instance
 from allennlp.data.token_indexers import TokenIndexer, SingleIdTokenIndexer
 from allennlp.data.tokenizers import Token
-from allennlp.data.dataset_readers.dataset_utils.span_utils import enumerate_spans
-from allennlp.common.checks import ConfigurationError
 
 logger = logging.getLogger(__name__)
 

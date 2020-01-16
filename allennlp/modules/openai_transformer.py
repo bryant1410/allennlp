@@ -11,16 +11,16 @@ here, so it's easiest to just reimplement them.
 """
 
 
-from typing import NamedTuple, List
 import copy
 import io
 import json
 import logging
-import math
 import pathlib
 import re
 import tarfile
+from typing import NamedTuple, List
 
+import math
 import numpy as np
 import torch
 from torch.nn import Parameter

@@ -20,12 +20,12 @@ The available optimizers are
 
 import logging
 import re
-import math
 from typing import List, Any, Dict, Type
 
+import math
 import torch
-from pytorch_pretrained_bert.optimization import BertAdam
 import transformers
+from pytorch_pretrained_bert.optimization import BertAdam
 
 from allennlp.common import Params, Registrable
 

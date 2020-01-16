@@ -1,5 +1,5 @@
-from typing import Dict, List, Union, Any
 import inspect
+from typing import Dict, List, Union, Any
 
 import torch
 from overrides import overrides

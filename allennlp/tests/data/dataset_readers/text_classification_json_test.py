@@ -1,11 +1,12 @@
-import pytest
 from typing import List
 
-from allennlp.data.dataset_readers import TextClassificationJsonReader
-from allennlp.common.util import ensure_list
+import pytest
+
 from allennlp.common.testing import AllenNlpTestCase
-from allennlp.data.tokenizers.sentence_splitter import SpacySentenceSplitter
+from allennlp.common.util import ensure_list
 from allennlp.common.util import get_spacy_model
+from allennlp.data.dataset_readers import TextClassificationJsonReader
+from allennlp.data.tokenizers.sentence_splitter import SpacySentenceSplitter
 
 
 class TestTextClassificationJsonReader:

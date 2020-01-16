@@ -3,8 +3,8 @@ import os
 import shutil
 
 from allennlp.common import Params
-from allennlp.common.util import flatten_filename
 from allennlp.common.testing import AllenNlpTestCase
+from allennlp.common.util import flatten_filename
 from allennlp.training import util
 
 

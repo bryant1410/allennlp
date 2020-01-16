@@ -1,5 +1,5 @@
-import pytest
 import numpy
+import pytest
 
 from allennlp.common.checks import ConfigurationError
 from allennlp.common.testing import AllenNlpTestCase

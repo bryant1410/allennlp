@@ -1,20 +1,20 @@
-from typing import Dict
 import argparse
 import logging
+from typing import Dict
 
 from overrides import overrides
 
 from allennlp import __version__
+from allennlp.commands.dry_run import DryRun
 from allennlp.commands.elmo import Elmo
 from allennlp.commands.evaluate import Evaluate
+from allennlp.commands.find_learning_rate import FindLearningRate
 from allennlp.commands.fine_tune import FineTune
 from allennlp.commands.predict import Predict
-from allennlp.commands.dry_run import DryRun
+from allennlp.commands.print_results import PrintResults
 from allennlp.commands.subcommand import Subcommand
 from allennlp.commands.test_install import TestInstall
-from allennlp.commands.find_learning_rate import FindLearningRate
 from allennlp.commands.train import Train
-from allennlp.commands.print_results import PrintResults
 from allennlp.common.util import import_submodules
 
 logger = logging.getLogger(__name__)

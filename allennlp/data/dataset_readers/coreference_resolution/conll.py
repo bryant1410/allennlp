@@ -1,11 +1,12 @@
-import logging
 import collections
+import logging
 from typing import Any, Dict, List, Optional, Tuple, DefaultDict, Set
 
 from overrides import overrides
 
 from allennlp.common.file_utils import cached_path
 from allennlp.data.dataset_readers.dataset_reader import DatasetReader
+from allennlp.data.dataset_readers.dataset_utils import Ontonotes, enumerate_spans
 from allennlp.data.fields import (
     Field,
     ListField,
@@ -15,9 +16,8 @@ from allennlp.data.fields import (
     SequenceLabelField,
 )
 from allennlp.data.instance import Instance
-from allennlp.data.tokenizers import Token
 from allennlp.data.token_indexers import SingleIdTokenIndexer, TokenIndexer
-from allennlp.data.dataset_readers.dataset_utils import Ontonotes, enumerate_spans
+from allennlp.data.tokenizers import Token
 
 logger = logging.getLogger(__name__)
 

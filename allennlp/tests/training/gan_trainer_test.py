@@ -10,18 +10,18 @@ and a discriminator `Model` to (hopefully) distinguish between the "true" and ge
 """
 from typing import Dict, Iterable, Any
 
-import tqdm
-import torch
 import numpy as np
+import torch
+import tqdm
 
 from allennlp.common import Registrable
 from allennlp.common.checks import ConfigurationError
 from allennlp.common.params import Params
 from allennlp.common.testing import AllenNlpTestCase
 from allennlp.data import Instance
-from allennlp.data.iterators import DataIterator
 from allennlp.data.dataset_readers import DatasetReader
 from allennlp.data.fields import ArrayField
+from allennlp.data.iterators import DataIterator
 from allennlp.models import Model
 from allennlp.nn.activations import Activation
 from allennlp.training.optimizers import Optimizer

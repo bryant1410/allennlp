@@ -1,5 +1,5 @@
-from flaky import flaky
 import torch
+from flaky import flaky
 
 from allennlp.common.testing import AllenNlpTestCase
 from allennlp.modules.drop_connect import DropConnect

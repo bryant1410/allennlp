@@ -1,5 +1,4 @@
 import math
-
 from pytest import approx
 
 from allennlp.common.testing import AllenNlpTestCase

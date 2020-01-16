@@ -7,12 +7,11 @@ At its core it uses Hugging Face's PyTorch implementation
 (https://github.com/huggingface/pytorch-pretrained-BERT),
 so thanks to them!
 """
-from typing import Dict, List
 import logging
+from typing import Dict, List
 
 import torch
 import torch.nn.functional as F
-
 from pytorch_pretrained_bert.modeling import BertModel
 
 from allennlp.modules.scalar_mix import ScalarMix

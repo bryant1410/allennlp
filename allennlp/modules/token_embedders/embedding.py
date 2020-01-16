@@ -1,15 +1,15 @@
 import io
-import tarfile
-import zipfile
-import re
-import logging
-import warnings
 import itertools
+import logging
+import re
+import tarfile
+import warnings
+import zipfile
 from typing import Optional, Tuple, Sequence, cast, IO, Iterator, Any, NamedTuple
 
-from overrides import overrides
 import numpy
 import torch
+from overrides import overrides
 from torch.nn.functional import embedding
 
 with warnings.catch_warnings():

@@ -4,10 +4,12 @@ the sequence and going backwards.
 """
 
 from typing import Optional, Tuple, Union, List
+
 import torch
 from torch.nn.utils.rnn import PackedSequence
-from allennlp.modules.augmented_lstm import AugmentedLstm
+
 from allennlp.common.checks import ConfigurationError
+from allennlp.modules.augmented_lstm import AugmentedLstm
 
 TensorPair = Tuple[torch.Tensor, torch.Tensor]
 

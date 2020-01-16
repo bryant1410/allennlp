@@ -1,12 +1,12 @@
-from typing import Dict, List, Tuple, Any
 from collections import OrderedDict
+from typing import Dict, List, Tuple, Any
 
 import torch
 
-from allennlp.training.optimizers import Optimizer
+from allennlp.common.params import Params
 from allennlp.common.testing import AllenNlpTestCase
 from allennlp.training.learning_rate_schedulers import LearningRateScheduler
-from allennlp.common.params import Params
+from allennlp.training.optimizers import Optimizer
 
 
 def is_hat_shaped(learning_rates: List[float]):

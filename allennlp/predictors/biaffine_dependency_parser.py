@@ -4,9 +4,9 @@ from overrides import overrides
 
 from allennlp.common.util import JsonDict, sanitize
 from allennlp.data import DatasetReader, Instance
+from allennlp.data.tokenizers.spacy_tokenizer import SpacyTokenizer
 from allennlp.models import Model
 from allennlp.predictors.predictor import Predictor
-from allennlp.data.tokenizers.spacy_tokenizer import SpacyTokenizer
 
 # POS tags have a unified colour.
 NODE_TYPE_TO_STYLE = {}

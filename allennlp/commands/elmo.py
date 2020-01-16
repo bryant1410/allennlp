@@ -68,8 +68,8 @@ import argparse
 import json
 import logging
 import os
-from typing import IO, List, Iterable, Tuple
 import warnings
+from typing import IO, List, Iterable, Tuple
 
 with warnings.catch_warnings():
     warnings.filterwarnings("ignore", category=FutureWarning)

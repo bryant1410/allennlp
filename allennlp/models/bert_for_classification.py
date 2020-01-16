@@ -1,14 +1,14 @@
 from typing import Dict, Union, Optional
 
-from overrides import overrides
 import torch
+from overrides import overrides
 from pytorch_pretrained_bert.modeling import BertModel
 
 from allennlp.data.vocabulary import Vocabulary
 from allennlp.models.model import Model
 from allennlp.modules.token_embedders.bert_token_embedder import PretrainedBertModel
-from allennlp.nn.initializers import InitializerApplicator
 from allennlp.nn import RegularizerApplicator
+from allennlp.nn.initializers import InitializerApplicator
 from allennlp.training.metrics import CategoricalAccuracy
 
 

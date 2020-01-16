@@ -2,14 +2,14 @@
 Helper functions for archiving models and restoring archived models.
 """
 
-from typing import NamedTuple, Dict, Any
 import atexit
 import json
 import logging
 import os
-import tempfile
-import tarfile
 import shutil
+import tarfile
+import tempfile
+from typing import NamedTuple, Dict, Any
 
 from torch.nn import Module
 
